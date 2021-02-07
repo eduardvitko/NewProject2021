@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 public class CollectionList {
     public static void main(String[] args) {
@@ -10,5 +11,6 @@ public class CollectionList {
         for(String city: stringArrayList) {
             System.out.println(city);
         }
+        Stream.of(10,20,30).forEach(System.out::println);
     }
 }
