@@ -14,5 +14,8 @@ public class CollectionList {
         Stream.of(10,20,30).forEach(System.out::println);
         Stream.of(5,20,30).forEach(System.out::println);
         Stream.of(15,247,30).forEach(System.out::println);
+        Stream.of(555,247,630)
+                .filter(x -> x < 575)
+                .forEach(System.out::println);
     }
 }
