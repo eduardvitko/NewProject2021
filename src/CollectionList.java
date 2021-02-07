@@ -11,6 +11,11 @@ public class CollectionList {
         for(String city: stringArrayList) {
             System.out.println(city);
         }
+        System.out.println("=====================");
+        Stream stream = stringArrayList.stream()
+                .filter(s -> s.toString().length() ==6);
+        stream.forEach(System.out::println);
+        System.out.println("=====================");
         Stream.of(10,20,30).forEach(System.out::println);
         Stream.of(5,20,30).forEach(System.out::println);
         Stream.of(15,247,30).forEach(System.out::println);
