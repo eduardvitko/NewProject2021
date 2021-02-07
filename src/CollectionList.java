@@ -12,5 +12,7 @@ public class CollectionList {
             System.out.println(city);
         }
         Stream.of(10,20,30).forEach(System.out::println);
+        Stream.of(5,20,30).forEach(System.out::println);
+        Stream.of(15,247,30).forEach(System.out::println);
     }
 }
